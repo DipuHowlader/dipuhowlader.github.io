@@ -6,6 +6,9 @@ const failed = document.querySelector("#failed");
 const loading = document.querySelector("#loading");
 const wrapper = document.querySelector("#wrapper");
 const toast = document.querySelector("#toast");
+const mobileHeader = document.querySelector("#mobile-header");
+const closeButton = document.querySelector(".close-button");
+const openMenu = document.querySelector(".open-menu");
 
 let isLoading = false;
 
@@ -14,12 +17,16 @@ function excuteLoading(isLoading) {
     loading.classList.add("hidden");
     wrapper.classList.remove("blur-sm");
   } else {
-    passed.classList.add("hidden")
-    failed.classList.add("hidden")
+    passed.classList.add("hidden");
+    failed.classList.add("hidden");
     loading.classList.remove("hidden");
     wrapper.classList.add("blur-sm");
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  excuteLoading(false);
+});
 
 const API_ROOT = "https://aqueous-citadel-50825.herokuapp.com/result";
 
@@ -59,4 +66,13 @@ form.addEventListener("submit", (e) => {
         toast.classList.remove(`-top-80`);
       });
   }
+});
+
+closeButton.addEventListener("click", () => {
+  mobileHeader.classList.add("hidden")
+});
+
+
+openMenu.addEventListener("click", () => {
+  mobileHeader.classList.remove("hidden")
 });
