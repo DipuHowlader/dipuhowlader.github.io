@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 60px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.do {
+  position: relative;
+}
+.do::after {
+  content: "o";
+  position: absolute;
+  top: -9px;
+  right: -25px;
+  font-size: 4rem;
+}
+
+.wraffer {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://loremflickr.com/1350/700/nature/all);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+  padding-bottom: 2em;
+}
+.wraffer .overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(62, 56, 56, 0.5294117647);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+}
+.wraffer .overlay .bouncer {
+  width: 130px;
+  height: 130px;
+  background: rgba(255, 255, 255, 0.3098039216);
+  border-radius: 50%;
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+  position: relative;
+}
+.wraffer .overlay.loading {
+  opacity: 1;
+  visibility: visible;
+}
+.wraffer header {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wraffer header .country {
+  padding: 20px 25px;
+}
+.wraffer header .country h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.wraffer header .country span {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.wraffer .search-area {
+  width: 100%;
+  max-height: 20%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+}
+.wraffer .search-box {
+  min-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.wraffer .search-box input {
+  background: #fff;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+}
+.wraffer .search-box svg {
+  width: 20px;
+  color: gray;
+  padding: 0;
+  margin-left: 10px;
+}
+.wraffer .grid-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  align-items: center;
+}
+.wraffer .grid-section .weather-desc {
+  grid-column: 2/6;
+  display: flex;
+  flex-direction: column;
+}
+.wraffer .grid-section .weather-desc .unit {
+  display: flex;
+  font-size: 4rem;
+  align-items: center;
+}
+.wraffer .grid-section .weather-desc .unit h2 {
+  font-weight: 300;
+  margin-left: 10px;
+}
+.wraffer .grid-section .weather-desc .unit img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  background: rgba(169, 161, 161, 0.1607843137);
+  border-radius: 32px;
+}
+.wraffer .grid-section .weather-desc h1 {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-left: 70px;
+  text-transform: capitalize;
+}
+.wraffer .grid-section .layer {
+  background: rgba(169, 161, 161, 0.7607843137);
+  grid-column: 7/12;
+  padding: 20px 10px;
+  border-radius: 20px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wraffer .grid-section .layer .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  margin: 0px 10px;
+  padding: 15px 0px;
+}
+.wraffer .grid-section .layer .box h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 7px;
+}
+.wraffer .grid-section .layer .box h2::after {
+  top: -3px !important;
+  right: -11px !important;
+  font-size: 1.2rem;
+}
+.wraffer .grid-section .layer .box span {
+  font-size: 1.6rem;
+}
+.wraffer .forecast {
+  margin-top: 30px;
+}
+.wraffer .forecast h2 {
+  font-size: 3rem;
+  font-family: montserrat;
+  font-weight: 300;
+  margin-bottom: 30px;
+  padding-left: 25px;
+}
+.wraffer .forecast .cast-boxs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+.wraffer .forecast .cast-boxs .single-cast {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  width: 140px;
+  background: rgba(169, 161, 161, 0.7607843137);
+  border-radius: 4px;
+}
+.wraffer .forecast .cast-boxs .single-cast span.time {
+  width: 27px;
+}
+.wraffer .forecast .cast-boxs .single-cast span {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 7px auto;
+}
+.wraffer .forecast .cast-boxs .single-cast span.do::after {
+  font-size: 1.1rem;
+  top: -3px;
+  right: -9px;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-clip-path: circle(0%);
+            clip-path: circle(0%);
+    opacity: 1;
+  }
+  50% {
+    -webkit-clip-path: circle(50%);
+            clip-path: circle(50%);
+    opacity: 0.9;
+  }
+  70% {
+    -webkit-clip-path: circle(70%);
+            clip-path: circle(70%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-clip-path: circle(0%);
+            clip-path: circle(0%);
+    opacity: 1;
+  }
+  50% {
+    -webkit-clip-path: circle(50%);
+            clip-path: circle(50%);
+    opacity: 0.9;
+  }
+  70% {
+    -webkit-clip-path: circle(70%);
+            clip-path: circle(70%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

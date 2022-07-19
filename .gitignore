@@ -114,7 +114,7 @@ $RECYCLE.BIN/
 
 
 ### Less ###
-*.css
+*.scss
 
 
 ### grunt ###
