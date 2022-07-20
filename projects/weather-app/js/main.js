@@ -27,12 +27,15 @@ const city = document.querySelector(".city");
 const overlay = document.querySelector(".overlay");
 const cast_box = document.querySelector(".cast-boxs");
 const state = document.querySelector(".state");
+const wrapper = document.querySelector(".wraffer");
 
 function Loading(loading = true) {
   if (loading) {
     overlay.classList.add("loading");
+    wrapper.style.filter= 'blur(4px)'
   } else {
     overlay.classList.remove("loading");
+    wrapper.style.filter= 'blur(0)'
   }
 }
 
