@@ -208,7 +208,7 @@ img {
   border-radius: 4px;
 }
 .wraffer .forecast .cast-boxs .single-cast span.time {
-  width: 27px;
+  min-width: 27px;
 }
 .wraffer .forecast .cast-boxs .single-cast span {
   font-size: 1.7rem;
