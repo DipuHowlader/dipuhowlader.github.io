@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setTimeout(() => {
     document.querySelector(".loader").classList.remove("loading");
-  }, 3000);
+  }, 1000);
 
 });
 
