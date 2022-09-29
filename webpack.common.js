@@ -36,13 +36,13 @@ module.exports = {
       filename:"protfolio.html",
       title: "Dipu || protfolio",
       template: "public/protfolio.html",
-      chunks: ["app"]
+      chunks: ["app", "protfolio"]
     }),
     new HtmlWebpackPlugin({
       filename:"contact.html",
       title: "Dipu || contact",
       template: "public/contact.html",
-      chunks: ["app"]
+      chunks: ["app", "contact"]
     }),
     new CleanWebpackPlugin(),
   ],

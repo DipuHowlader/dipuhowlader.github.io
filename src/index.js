@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("mouseleave", () => cursor.leave());
   });
 
-  document.querySelector(".loader").classList.remove("loading");
+  setTimeout(() => {
+    document.querySelector(".loader").classList.remove("loading");
+  }, 3000);
+
 });
 
