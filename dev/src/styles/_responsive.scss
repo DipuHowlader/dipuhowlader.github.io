@@ -1,0 +1,180 @@
+@media screen and (min-width: 480px) {
+
+    header.main #navbar nav a.navbar-brand {
+        padding: 10px 20px;
+    }
+}                                    
+
+@media screen and (max-width: 320px) {                    
+    :root {
+        font-size: 40% !important;
+    }
+
+    #about div.content ul.skill-list li {
+        flex-basis: 46.33%;
+    }
+
+    footer a.mail h1 {
+        font-size: 2.5rem !important;
+    }
+
+    footer a.social-links{
+        margin-right: 2rem;
+        font-size: 2rem !important;
+    }
+
+    footer p.contact {
+        margin: 70px 0 20px;
+        font-size: 1.7rem;
+    }
+
+    footer p.copyright {
+        margin: 30px 0 15px;
+        font-size: 1.5rem;
+    }
+
+    section#about{
+        margin-top: 30rem;
+    }
+    header.main #navbar nav a.navbar-brand {
+         padding: 10px 10px; 
+    }
+    header .header-content .social-icons{
+        display: none;
+    }
+
+    #about div.content h3::after {
+        right: -111%;
+    }
+
+    #about div.content h3::before {
+        right: -102%;
+    }
+
+    section#protfolio {
+        margin-top: -56rem !important;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    :root {
+        font-size: 52% !important;
+    }
+
+    header.main #navbar nav .navbar-brand{
+        padding: 0px 6px !important;
+    }
+
+    header.main {
+        min-height: calc(100vh + 20rem) !important;
+    }
+
+    header #navbar nav.navbar {
+        padding: 10px 10px 60px 0;
+    }
+
+    header .header-content .outter {
+        left: auto !important;
+        right: 8%;
+        bottom: 22% !important;
+    }
+
+    section#protfolio {
+        margin-top: -15rem;
+    }
+    footer a.mail h1{
+        font-size: 2.4rem;
+    }
+
+    div.menupage ul li a{
+        font-size: 4rem;
+    }
+    .menupage .info {
+        grid-gap: 5rem;
+        margin: 0 50px;
+        div.email span, div.email a, div.location span{
+            font-size: 1.5rem;
+        }
+    }
+    section#conatct .contact h2{
+        font-size: 4rem;
+    }
+    .circle{
+        width: 300px !important;
+        height: 300px !important;
+        top: 0 !important;
+    }
+    #about div.imgBox{
+        max-width: 100%;
+        border:none !important;
+        margin-left: 0 !important;
+
+        img{
+            top: 0 !important;
+            left: 0 !important;
+        }
+
+        &::before{
+            top: 0;
+            left: 0;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        font-size: 55% !important;
+    }
+     section#protfolio {
+        margin-top: -30rem;
+    }
+
+    #protfolio .case-study {
+        margin-bottom: 4rem;
+    }
+
+    header .header-content div.outter{
+        display: none !important;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #protfolio .case-study .project-details {
+        padding: 0 5px;
+    }
+
+    #protfolio .case-study div.project-details p {
+        font-size: 1.3rem;
+    }
+
+    footer a.social-links {
+        font-size: 2.5rem;
+    }
+    section#conatct div.form{
+        max-width: 90%;
+        width: 90%;
+    }
+
+
+   
+}
+
+@media screen and (max-width: 1024px) {
+    #protfolio {
+        margin-top: -10rem;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+        font-size: 70% !important;
+    }
+
+    #protfolio .case-study {
+        margin-bottom: 4rem;
+    }
+}
