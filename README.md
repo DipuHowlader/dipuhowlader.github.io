@@ -2,8 +2,10 @@
 
 ### [Live Site](https://aesthetic-druid-a5c893.netlify.app/)
 
-![Portfolio Website](https://ibb.co/NnD986B)
+![Portfolio Website](https://i.ibb.co/fG6khYw/Dipu-Home.png)
 
 
 Setup:
-- run ```npm i && npm start```
+- run ```npm```
+      ```cd dev```
+      ```npm start```
